@@ -1,0 +1,74 @@
+﻿@page "/upload"
+@inject IFileUploadService FileService
+
+<h3 class="upload-header">File Upload</h3>
+<div class="upload-container">
+
+    <EditForm Model="@_fileUploadModel" OnValidSubmit="@UploadFileAsync">
+        <div class="form-group">
+            <InputFile OnChange="@OnFileSelected" class="form-control-file" />
+            <ValidationMessage For="@(() => _fileUploadModel.Name)" class="text-danger" />
+        </div>
+        <FUButton Text="Upload" ButtonStyle="ButtonStyle.Primary" Class="mt-4" Style="border: 3px solid" type="submit" disabled="@_isUploading" />
+    </EditForm>
+    @if (_isUploading)
+    {
+        <p class="upload-progress">Uploading file, please wait...</p>
+    }
+    @if (!string.IsNullOrEmpty(_uploadMessage))
+    {
+        <div class="upload-message">@_uploadMessage</div>
+    }
+    @if (!string.IsNullOrEmpty(_errorMessage))
+    {
+        <div class="alert alert-danger mt-3" role="alert">
+            @_errorMessage
+        </div>
+    }
+
+</div>
+<div class="upload-container">
+    <h1 class="upload-header">Uploaded File Records</h1>
+    <div class="tbl-header">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Path</th>
+                    <th>Extension</th>
+                    <th>Created On</th>
+                    <th>Last Modified On</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                @if (_files.Any())
+                {
+                    @foreach (var file in _files)
+                    {
+                        <tr>
+                            <td>@file.Name</td>
+                            <td>@file.Path</td>
+                            <td>@file.Extension</td>
+                            <td>@file.CreatedOn.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td>@file.LastModifiedOn.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No files uploaded yet.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+

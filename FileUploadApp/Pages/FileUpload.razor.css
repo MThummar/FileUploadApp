@@ -1,0 +1,66 @@
+﻿
+.upload-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #007bff;
+}
+
+.upload-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+   
+}
+
+.upload-progress {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.upload-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: purple;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    border-color: #007bff;
+    border-top: solid 1px;
+border-bottom: solid 1px;
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+}

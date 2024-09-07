@@ -1,0 +1,13 @@
+﻿@namespace FileUploadApp.Blazor.Components
+@inherits FileUploadAppComponentBase
+
+<button class="@_buttonClasses" style="@_buttonStyle @Style" @attributes="UserAttributes" disabled="@IsDisabled">
+    @if (!string.IsNullOrWhiteSpace(Icon))
+    {
+    <i class="fa fa-@Icon" style="margin-right: 10px"/>
+    }
+    @Text
+</button>
+
+
+

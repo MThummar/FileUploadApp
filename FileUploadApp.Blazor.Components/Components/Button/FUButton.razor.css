@@ -1,0 +1,33 @@
+﻿button {
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover:enabled
+{
+    background-color: #CCCCCC;
+}
+.primary {
+    background-color: blue;
+    color: white;
+}
+
+.secondary{
+    background-color: white;
+    color: blue;
+}
+
+.outlined{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
+
+.disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
