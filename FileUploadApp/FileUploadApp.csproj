@@ -27,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Services\" />
+    <None Remove="Uploads\zgeipuvmvzr.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

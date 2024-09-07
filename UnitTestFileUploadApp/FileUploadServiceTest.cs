@@ -42,7 +42,7 @@ using Moq;
             Assert.NotNull(fileRecord);
             Assert.AreEqual(fileName, fileRecord.Name);
             Assert.AreEqual(filePath, fileRecord.Path);
-            Assert.AreEqual(extension, fileRecord.Extention);
+            Assert.AreEqual(extension, fileRecord.Extension);
             Assert.AreEqual(createdOn, fileRecord.CreatedOn);
             Assert.AreEqual(lastModifiedOn, fileRecord.LastModifiedOn);
         }
@@ -72,19 +72,19 @@ using Moq;
             var context = CreateContext();
             var service = CreateService(context);
 
-            var fileRecord1 = new FileRecords
+            var fileRecord1 = new FileRecord
             {
                 Name = "testfile1.txt",
                 Path = "/path/to/file1",
-                Extention = ".txt",
+                Extension = ".txt",
                 CreatedOn = DateTime.UtcNow,
                 LastModifiedOn = DateTime.UtcNow
             };
-            var fileRecord2 = new FileRecords
+            var fileRecord2 = new FileRecord
             {
                 Name = "testfile2.txt",
                 Path = "/path/to/file2",
-                Extention = ".txt",
+                Extension = ".txt",
                 CreatedOn = DateTime.UtcNow,
                 LastModifiedOn = DateTime.UtcNow
             };

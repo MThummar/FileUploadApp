@@ -10,7 +10,7 @@ public class AppDbContext : DbContext
     /// <summary>
     /// Gets or sets the FileRecords table.
     /// </summary>
-    public DbSet<FileRecords> FileRecords { get; set; }
+    public DbSet<FileRecord> FileRecords { get; set; }
 
     /// <summary>
     /// Configures the model for the context.
@@ -20,13 +20,13 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder); // Call the base method if using EF Core conventions
 
-        // Configure FileRecord entity
-        modelBuilder.Entity<FileRecords>(entity =>
+        // Configure FileRecord entity, this code will automatically generates unique Id for file records
+        modelBuilder.Entity<FileRecord>(entity =>
         {
             entity.HasKey(e => e.Id); // Set Id as the primary key
             entity.Property(e => e.Id)
-                  .ValueGeneratedOnAdd(); // Auto-generate Id values
-         
+                          .ValueGeneratedOnAdd(); // Auto-generate Id values
+
         });
 
         // You can also configure other entities here if needed

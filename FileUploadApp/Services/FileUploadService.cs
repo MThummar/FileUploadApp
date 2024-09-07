@@ -13,17 +13,13 @@ public class FileUploadService : IFileUploadService
 
     public async Task SaveFileRecordAsync(string fileName, string filePath, string extension, DateTime createdOn, DateTime lastModifiedOn)
     {
-        if (string.IsNullOrWhiteSpace(fileName)) throw new ArgumentException("File name cannot be empty.", nameof(fileName));
-        if (string.IsNullOrWhiteSpace(filePath)) throw new ArgumentException("File path cannot be empty.", nameof(filePath));
-        if (string.IsNullOrWhiteSpace(extension)) throw new ArgumentException("File extension cannot be empty.", nameof(extension));
-
         try
         {
-            var fileRecord = new FileRecords
+            var fileRecord = new FileRecord()
             {
                 Name = fileName,
                 Path = filePath,
-                Extention = extension,
+                Extension = extension,
                 CreatedOn = createdOn,
                 LastModifiedOn = lastModifiedOn
             };
@@ -48,7 +44,7 @@ public class FileUploadService : IFileUploadService
                 {
                     Name = file.Name,
                     Path = file.Path,
-                    Extension = file.Extention,
+                    Extension = file.Extension,
                     CreatedOn = file.CreatedOn,
                     LastModifiedOn = file.LastModifiedOn
                 });

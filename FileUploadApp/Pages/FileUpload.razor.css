@@ -3,7 +3,6 @@
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 8px;
     background-color: #f9f9f9;
     color: #007bff;
 }
@@ -11,7 +10,6 @@
 .upload-header {
     font-size: 1.5rem;
     margin-bottom: 20px;
-   
 }
 
 .upload-progress {
@@ -40,7 +38,7 @@ table {
 .tbl-header {
     border-color: #007bff;
     border-top: solid 1px;
-border-bottom: solid 1px;
+    border-bottom: solid 1px;
 }
 
 .tbl-content {
@@ -56,6 +54,14 @@ th {
     font-size: 12px;
     text-transform: uppercase;
 }
+
+tr {
+    transition: 0.3s;
+}
+
+    tr:hover td {
+        background-color: #CCCCCC;
+    }
 
 td {
     padding: 15px;
