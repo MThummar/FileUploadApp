@@ -5,7 +5,7 @@ VisualStudioVersion = 25.0.1706.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadApp", "FileUploadApp\FileUploadApp.csproj", "{CE9A4080-C7A1-4C22-99CE-3A5243311607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestFileUploadApp", "UnitTestFileUploadApp\UnitTestFileUploadApp.csproj", "{757F3EEF-3826-4530-9363-E153A892C513}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadApp.UnitTests", "UnitTestFileUploadApp\FileUploadApp.UnitTests.csproj", "{757F3EEF-3826-4530-9363-E153A892C513}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadApp.Blazor.Components", "FileUploadApp.Blazor.Components\FileUploadApp.Blazor.Components.csproj", "{3F510F54-CFAA-48E3-AF16-5089BBD969D0}"
 EndProject

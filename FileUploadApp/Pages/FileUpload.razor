@@ -5,8 +5,8 @@
 <div class="upload-container">
 
     <EditForm Model="@_fileUploadModel" OnValidSubmit="@UploadFileAsync">
-        <div class="form-group">
-            <InputFile OnChange="@OnFileSelected" class="form-control-file mt-4" margin="10px"/>
+        <div class="form-group" style="margin:20px;">
+    <InputFile OnChange="@OnFileSelected" class="form-control-file" />
             <ValidationMessage For="@(() => _fileUploadModel.Name)" class="text-danger" />
         </div>
         <FUButton Text="Upload" ButtonStyle="ButtonStyle.Primary" type="submit" disabled="@_isUploading" />
