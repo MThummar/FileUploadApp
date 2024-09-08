@@ -1,0 +1,23 @@
+﻿@if (FileUploadModel == null)
+{
+    <th>@Label</th>
+}
+else
+{
+    var property = typeof(FileUploadModel).GetProperty(Name);
+    <td>@property.GetValue(FileUploadModel).ToString()</td>
+}
+
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; } // Property Name
+
+    [Parameter]
+    public string Label { get; set; } // Property Title
+
+    [CascadingParameter]
+    public FileUploadModel FileUploadModel { get; set; }
+}
+

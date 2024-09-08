@@ -28,8 +28,20 @@
   <ItemGroup>
     <None Remove="Services\" />
     <None Remove="Uploads\zgeipuvmvzr.pdf" />
+    <None Remove="Uploads\yibrofl4zkd.pdf" />
+    <None Remove="Uploads\rx0sh0fjtww.pdf" />
+    <None Remove="Uploads\f5vuacahkqa.pdf" />
+    <None Remove="Uploads\pj4a4ijycbg.pdf" />
+    <None Remove="Uploads\tic03frobdn.pdf" />
+    <None Remove="Uploads\dno4mvnd5xn.Server" />
+    <None Remove="Uploads\qhvsyeyxlvb.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Uploads\ndhtor53ihe.json" />
+    <Content Remove="appsettings.json" />
+    <Content Remove="appsettings.Development.json" />
   </ItemGroup>
 </Project>
