@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject FileUploadApp.Services.IFileUploadService FileService
+@inject IConfiguration configuration;
 
 <h3 class="data-header">File Upload</h3>
 <div class="data-container">
@@ -27,7 +28,7 @@
     }
 
 </div>
-<FUGrid FileUploadModels="@_files">
+<FUGrid FileUploadModels="@_uoloadedFiles">
     <Columns>
         <Column Name="Name" Label="FileName" />
         <Column Name="Path" Label="FilePath" />
@@ -35,7 +36,7 @@
         <Column Name="CreatedOn" Label="CreationDate" />
         <Column Name="LastModifiedOn" Label="LastModifiedDate" />
     </Columns>
-   
+
 </FUGrid>
 
 

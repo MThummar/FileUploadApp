@@ -1,4 +1,7 @@
 ﻿namespace UnitTestFileUploadApp;
+
+using FileUploadApp.Data;
+using FileUploadApp.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Moq;
