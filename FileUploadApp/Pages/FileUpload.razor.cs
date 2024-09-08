@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.Forms;
+﻿using FileUploadApp.Models;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace FileUploadApp.Pages
 {
@@ -8,7 +9,7 @@ namespace FileUploadApp.Pages
         private List<FileUploadModel> _files = new();
 
         // Model for managing file upload data
-        private FileUploadModel _fileUploadModel = new();
+        private readonly FileUploadModel _fileUploadModel = new();
 
         // Holds the currently selected file
         private IBrowserFile? _selectedFile;

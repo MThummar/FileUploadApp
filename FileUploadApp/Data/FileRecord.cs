@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace FileUploadApp.Data;
+
+
 /// <summary>
 /// Represents a record of a file in the database.
 /// </summary>
@@ -34,5 +36,5 @@ public class FileRecord
     /// </summary>
     public DateTime LastModifiedOn { get; set; }
 
-    
+
 }

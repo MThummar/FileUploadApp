@@ -35,9 +35,11 @@
     <None Remove="Uploads\tic03frobdn.pdf" />
     <None Remove="Uploads\dno4mvnd5xn.Server" />
     <None Remove="Uploads\qhvsyeyxlvb.pdf" />
+    <None Remove="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Uploads\ndhtor53ihe.json" />

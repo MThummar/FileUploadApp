@@ -1,6 +1,10 @@
-﻿public class FileUploadModel
+﻿namespace FileUploadApp.Models;
+
+public class FileUploadModel
 {
-    public FileUploadModel() { }
+    public FileUploadModel()
+    {
+    }
 
     public FileUploadModel(string name, string path, string extension, DateTime createdOn, DateTime lastModifiedOn)
     {
@@ -11,7 +15,6 @@
         LastModifiedOn = lastModifiedOn;
     }
 
-    
     public string Name { get; set; }
 
     public string Path { get; set; }
@@ -22,3 +25,5 @@
 
     public DateTime LastModifiedOn { get; set; }
 }
+
+

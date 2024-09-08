@@ -1,13 +1,13 @@
-﻿@if (FileUploadModel == null)
+﻿@using FileUploadApp.Models
+@if (FileUploadModel == null)
 {
     <th>@Label</th>
 }
 else
 {
-    var property = typeof(FileUploadModel).GetProperty(Name);
+    var property = typeof(FileUploadApp.Models.FileUploadModel).GetProperty(Name);
     <td>@property.GetValue(FileUploadModel).ToString()</td>
 }
-
 
 @code {
 

@@ -4,12 +4,17 @@
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     color: #007bff;
+    font-family: monospace;
+    font-size: medium;
+    font-weight: 400;
 }
 
 .tbl-header {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    align-content: center;
 }
+
 table {
     width: 100%;
     table-layout: fixed;

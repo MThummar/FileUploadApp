@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+namespace FileUploadApp.Data;
 
 public class AppDbContext : DbContext
 {
@@ -32,4 +33,6 @@ public class AppDbContext : DbContext
         // You can also configure other entities here if needed
     }
 }
+
+
 

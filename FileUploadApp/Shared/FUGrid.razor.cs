@@ -1,4 +1,5 @@
 ﻿using System;
+using FileUploadApp.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace FileUploadApp.Shared
